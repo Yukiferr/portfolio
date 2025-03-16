@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFD700;
+}
+
+header {
+    background-color: #011c36;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;   /*tirar os pontos*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    order: 1;           /*deixar para o lado esquerdo os menus*/
+}
+
+.icone {
+    font-size: 30px;
+    cursor: pointer;    /*animação mouse*/
+    order: 2;           /*deixar para o lado direito o icone*/
+    margin: 2px;
+    padding: 0px;
+}
+
+ul li {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.inicio {
+    display: flex;              /*deixar lado a lado (imagem e o texto)*/
+    gap: 50px;                  /* distanciamento da imagem com o texto*/
+    max-width: 1200px;          /*limite de px para ocupação da classe*/
+    margin: 0 auto;             /* margin automatica nas laterais (right-left)*/
+    padding: 20px;
+}
+
+.eu {
+    width: 500px;
+    height: auto;               
+    border-radius: 15px;
+    margin-top: 0px;
+}
+
+.sobre-mim {
+    flex: 1;
+}
+
+.sobre-mim h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 25%;
+    color: #011c36;
+    text-align: center;
+}
+
+.sobre-mim p {
+    font-size: 1.5em;
+    text-align: center;
+    color: #011c36;
+}
+
+.posicao {
+    position: relative; 
+    width: 50%;
+    max-width: 800px;   /*limite de px para ocupação*/
+    margin: 0 auto; /* Centralização */
+}
+
+.texto-sobreposto {
+    white-space: nowrap;    /*sem quebra de linha*/
+    position: absolute;   /*sobrepor o texto na imagem*/                  
+    top: 97%;       /*posição vertical*/
+    left: 60%;      /*posição horizontal*/
+    transform: translate(-50%, -50%); /*centraliza o texto*/
+    color: white;
+    font-size: 5em;     
+    font-weight: bold;  /*Fonte em negrito*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /*Sombreamento*/
+    padding: 10px 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: #FFD700;
+    color: #002244;
+}
+
+.button:hover {
+    background-color: #ffd9003b;
+}
+
+.portfolio {
+    padding: 20px;
+    padding-left: 15%;
+    max-width: 100%;
+    margin:0;
+    background-color: #011c36;
+}
+
+.projeto {
+    background-color: #011c36;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projeto h3 {
+    font-size: 8em;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.projeto h4 {
+    font-size: 2em;
+    color: #fff;
+    margin: 0;
+
+}
+
+.projeto p {
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 20px;
+}
